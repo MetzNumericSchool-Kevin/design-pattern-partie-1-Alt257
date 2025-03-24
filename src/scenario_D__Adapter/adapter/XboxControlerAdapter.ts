@@ -1,5 +1,4 @@
 import {IControlerActions} from "../IControlerActions";
-import {Keyboard} from "../controler/Keyboard";
 import {AbstractControlerAdapter} from "./AbstractControlerAdapter";
 import {XboxControler} from "../controler/XboxControler";
 

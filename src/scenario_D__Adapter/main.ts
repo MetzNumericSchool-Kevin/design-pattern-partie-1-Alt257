@@ -1,4 +1,3 @@
-import {KeyboardAdapter} from "./adapter/KeyboardAdapter";
 import {Keyboard} from "./controler/Keyboard";
 import {ControlerAdapterFactory} from "./ControlerAdapterFactory";
 import {XboxControler} from "./controler/XboxControler";
