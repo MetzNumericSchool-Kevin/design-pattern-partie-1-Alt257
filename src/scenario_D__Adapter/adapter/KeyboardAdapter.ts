@@ -19,7 +19,7 @@ export class KeyboardAdapter    extends AbstractControlerAdapter
         this.keyboard.mouseLeft();
     }
     use(): void {
-        this.printAction('Interragir');
+        this.printAction('Intéragir');
         this.keyboard.mouseRight();
     }
 
