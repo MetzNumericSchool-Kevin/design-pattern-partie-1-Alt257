@@ -2,11 +2,9 @@ import {IControlerActions} from "./IControlerActions";
 import {Keyboard} from "./BO/Keyboard";
 
 export class KeyboardAdapter implements IControlerActions {
-    private keyboard: Keyboard;
     constructor(
-    ) {
-        this.keyboard = new Keyboard();
-    }
+        private keyboard: Keyboard,
+    ) {}
 
     jump(): void {
         console.log('"Sauter" avec le clavier : ');
