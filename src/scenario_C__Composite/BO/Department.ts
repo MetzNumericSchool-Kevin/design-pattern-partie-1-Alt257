@@ -10,11 +10,10 @@ export class Department implements IDepartment {
     ) {    }
 
     public countEmployees(): number {
-        let totalEmployees = 0;
-        this.subDepartmentList.forEach(
-            subDepartment =>
-                totalEmployees += subDepartment.countEmployees()
+        return this.subDepartmentList.reduce(
+            (accumulator, currentDep) =>
+                accumulator + currentDep.countEmployees(),
+            0
         );
-        return totalEmployees;  //@TODO: refact - search for 'reduce' fn
     }
 }
