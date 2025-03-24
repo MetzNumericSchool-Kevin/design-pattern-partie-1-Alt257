@@ -1,7 +1,8 @@
-import {KeyboardAdapter} from "./KeyboardAdapter";
-import {Keyboard} from "./BO/Keyboard";
+import {KeyboardAdapter} from "./adapter/KeyboardAdapter";
+import {Keyboard} from "./controler/Keyboard";
+import {ControlerAdapterFactory} from "./ControlerAdapterFactory";
 
-let keyboard = new KeyboardAdapter(new Keyboard());
+let keyboard = ControlerAdapterFactory.create(new Keyboard());
 keyboard.jump();
 keyboard.attack();
 keyboard.use();
